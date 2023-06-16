@@ -1,0 +1,79 @@
+Venda com pagamento em dinheiro e cartão
+    Dado que inicio uma venda com F5
+    MAS não adiciono voucher
+    MAS não informo forma de pagamento e nem cliente
+    E informo um produto do tipo combustível
+    E informo um produto do tipo mercadoria
+    Quando finalizo a venda com F5
+    E informo parte do pagamento em dinheiro
+    E informo parte do pagamento em cartão
+    Então o pagamento é realizado
+
+
+Venda de produto com regra de preço
+    Dado que inicio uma venda com F5
+    MAS não adiciono voucher
+    E informo a forma de pagamento e o cliente
+    E informo um produto do tipo mercadoria
+    Quando finalizo a venda com F5
+    E confirmo o pagamento
+    Então o pagamento é realizado
+
+Venda com troco em dinheiro
+    Dado que inicio uma venda com F5
+    MAS não adiciono voucher
+    MAS não informo forma de pagamento e nem cliente
+    E informo um produto do tipo combustível
+    E informo um produto do tipo mercadoria
+    Quando finalizo a venda com F5
+    E informo pagamento em dinheiro com valor maior
+    E confirmo o pagamento
+    Então o pagamento é realizado
+
+Cancelar última venda
+    Dado que estou no caixa e teclo F10 para abir a tela de caixa
+    Quando acesso a rotina Operações > Cancelar última venda
+    Então é exibida uma mensagem para confirmar o cancelamento
+    Quando clico em 'Sim'
+    E informo o motivo e confirmo
+    Entao a venda é cancelada com sucesso
+
+Efetuar suprimento de caixa
+    Dado que estou no caixa e teclo F10 para abir a tela de caixa
+    Quando acesso a rotina Operações > Suprimento de caixa
+    Então é exibida a tela de suprimento para informar o valor
+    Quando informo o valor e confirmo
+    Então o suprimento é realizado com sucesso
+
+Efetuar sangria em dinheiro
+    Dado que estou no caixa e teclo F10 para abir a tela de caixa
+    Quando acesso a rotina Operações > Sangria > Dinheiro
+    Então é exibida a tela de sangria para informar o valor
+    Quando informo o valor da sangria e confirmo
+    Então a sangria é realizada com sucesso
+
+Gerar contas a pagar
+    Dado que estou no módulo Gerencial
+    E acesso a rotina Financeiro > Contas a pagar > Contas a pagar
+    Quando inicio a criação de uma nova conta
+    E seleciono o motivo de movimentação
+    E informo o Documento, Pessoa e Valor
+    Então a conta a pagar é criada com sucesso
+
+Realizar baixa de contas a pagar
+    Dado que estou no módulo Gerencial
+    E acesso a rotina Financeiro > Contas a pagar > Contas a pagar
+    E informo o fornecedor e confirmo
+    Quando seleciono uma conta a pagar
+    E clico no botão Baixar
+    E informo a forma de pagamento
+    Então a baixa é realizada com sucesso
+
+Realizar a exclusão de uma baixa
+    Dado que estou no módulo Gerencial
+    E acesso a rotina Financeiro > Contas a pagar > Contas a pagar
+    E informo o fornecedor e confirmo
+    Quando navego até a aba Pagas
+    E seleciono uma conta
+    E realizo a exclusão
+    Quando navego até a aba A Pagar

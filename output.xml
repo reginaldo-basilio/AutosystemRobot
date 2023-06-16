@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230615 23:45:21.705" rpa="false" schemaversion="3">
+<suite id="s1" name="VendasF5" source="C:\Users\reginaldo.cunha\Desktop\Arquivos Reginaldo\Projeto automacao\AutosystemRobot\VendasF5.robot">
+<test id="s1-t1" name="Gerar contas a pagar" line="16">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20230615 23:45:24.673" endtime="20230615 23:45:24.692"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:24.673" endtime="20230615 23:45:24.693"/>
+</kw>
+<kw name="Dado que estou no módulo Gerencial" library="resource">
+<kw name="Set Variable" library="BuiltIn">
+<var>${window_title}</var>
+<arg>AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230615 23:45:24.694" level="INFO">${window_title} = AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</msg>
+<status status="PASS" starttime="20230615 23:45:24.694" endtime="20230615 23:45:24.695"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>${window_title}</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20230615 23:45:24.695" endtime="20230615 23:45:24.946"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:24.693" endtime="20230615 23:45:24.946"/>
+</kw>
+<kw name="E acesso a rotina Financeiro &gt; Contas a pagar &gt; Contas a pagar" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>menu-financeiro.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:26.805" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883526002.png'/&gt;
+[log] CLICK on L[38,33]@S(0) (562 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:24.948" endtime="20230615 23:45:26.805"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:26.953" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:26.805" endtime="20230615 23:45:26.954"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.052" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:26.954" endtime="20230615 23:45:27.052"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.148" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:27.052" endtime="20230615 23:45:27.148"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.246" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:27.148" endtime="20230615 23:45:27.246"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.340" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:27.246" endtime="20230615 23:45:27.340"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>RIGHT</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.432" level="INFO">[log]  TYPE "#RIGHT."</msg>
+<status status="PASS" starttime="20230615 23:45:27.340" endtime="20230615 23:45:27.432"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:27.530" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230615 23:45:27.432" endtime="20230615 23:45:27.531"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-contas-pagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:28.226" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883528165.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:27.531" endtime="20230615 23:45:28.226"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:24.947" endtime="20230615 23:45:28.226"/>
+</kw>
+<kw name="Quando inicio a criação de uma nova conta" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:29.311" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883528468.png'/&gt;
+[log] CLICK on L[463,541]@S(0) (556 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:28.228" endtime="20230615 23:45:29.311"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-novoContasPagar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:30.762" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883529919.png'/&gt;
+[log] CLICK on L[960,172]@S(0) (563 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:29.311" endtime="20230615 23:45:30.762"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-motivo-movimentacao-contasPagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:31.405" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883531378.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:30.762" endtime="20230615 23:45:31.406"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:28.227" endtime="20230615 23:45:31.406"/>
+</kw>
+<kw name="E seleciono o motivo de movimentação" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>opcao-movto-movimentacao-contasPagar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:32.428" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883531636.png'/&gt;
+[log] CLICK on L[512,306]@S(0) (559 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:31.407" endtime="20230615 23:45:32.428"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:33.618" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883532752.png'/&gt;
+[log] CLICK on L[524,495]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:32.429" endtime="20230615 23:45:33.618"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:31.406" endtime="20230615 23:45:33.618"/>
+</kw>
+<kw name="E informo o Documento, Pessoa e Valor" library="resource">
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-movimentacao-financ-contasPagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:34.265" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883534219.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:33.620" endtime="20230615 23:45:34.266"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>txt-num-documento-contasPagar.png</arg>
+<arg>12345</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230615 23:45:35.763" level="INFO">Input Text:
+12345</msg>
+<msg timestamp="20230615 23:45:35.764" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883534550.png'/&gt;
+[log] CLICK on L[364,388]@S(0) (567 msec)
+[log]  TYPE "12345"</msg>
+<status status="PASS" starttime="20230615 23:45:34.266" endtime="20230615 23:45:35.764"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:35.867" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:35.765" endtime="20230615 23:45:35.867"/>
+</kw>
+<kw name="Type" library="ImageHorizonLibrary">
+<arg>3696</arg>
+<doc>Type text and keyboard keys.</doc>
+<status status="PASS" starttime="20230615 23:45:35.867" endtime="20230615 23:45:35.981"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:36.071" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:35.981" endtime="20230615 23:45:36.071"/>
+</kw>
+<kw name="Type" library="ImageHorizonLibrary">
+<arg>\t</arg>
+<doc>Type text and keyboard keys.</doc>
+<status status="PASS" starttime="20230615 23:45:36.071" endtime="20230615 23:45:36.173"/>
+</kw>
+<kw name="Type" library="ImageHorizonLibrary">
+<arg>100</arg>
+<doc>Type text and keyboard keys.</doc>
+<status status="PASS" starttime="20230615 23:45:36.173" endtime="20230615 23:45:36.279"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:33.619" endtime="20230615 23:45:36.279"/>
+</kw>
+<kw name="Então a conta a pagar é criada com sucesso" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:37.241" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883536499.png'/&gt;
+[log] CLICK on L[365,573]@S(0) (554 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:36.279" endtime="20230615 23:45:37.241"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-movimentacao-financ-contasPagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:37.661" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883537569.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:37.242" endtime="20230615 23:45:37.661"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ESC</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:37.751" level="INFO">[log]  TYPE "#ESC."</msg>
+<status status="PASS" starttime="20230615 23:45:37.662" endtime="20230615 23:45:37.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230615 23:45:38.753" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230615 23:45:37.752" endtime="20230615 23:45:38.753"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ESC</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:38.847" level="INFO">[log]  TYPE "#ESC."</msg>
+<status status="PASS" starttime="20230615 23:45:38.753" endtime="20230615 23:45:38.847"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:36.279" endtime="20230615 23:45:38.848"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:24.672" endtime="20230615 23:45:38.849"/>
+</test>
+<test id="s1-t2" name="Realizar baixa de contas a pagar" line="24">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20230615 23:45:38.852" endtime="20230615 23:45:38.864"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:38.852" endtime="20230615 23:45:38.865"/>
+</kw>
+<kw name="Dado que estou no módulo Gerencial" library="resource">
+<kw name="Set Variable" library="BuiltIn">
+<var>${window_title}</var>
+<arg>AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230615 23:45:38.866" level="INFO">${window_title} = AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</msg>
+<status status="PASS" starttime="20230615 23:45:38.866" endtime="20230615 23:45:38.866"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>${window_title}</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20230615 23:45:38.866" endtime="20230615 23:45:39.368"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:38.865" endtime="20230615 23:45:39.368"/>
+</kw>
+<kw name="E acesso a rotina Financeiro &gt; Contas a pagar &gt; Contas a pagar" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>menu-financeiro.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:40.356" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883539597.png'/&gt;
+[log] CLICK on L[38,33]@S(0) (551 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:39.369" endtime="20230615 23:45:40.356"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.451" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:40.356" endtime="20230615 23:45:40.451"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.545" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:40.452" endtime="20230615 23:45:40.545"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.634" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:40.546" endtime="20230615 23:45:40.634"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.728" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:40.635" endtime="20230615 23:45:40.728"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.824" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:40.728" endtime="20230615 23:45:40.824"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>RIGHT</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:40.917" level="INFO">[log]  TYPE "#RIGHT."</msg>
+<status status="PASS" starttime="20230615 23:45:40.824" endtime="20230615 23:45:40.917"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:41.010" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230615 23:45:40.918" endtime="20230615 23:45:41.011"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-contas-pagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:41.691" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883541645.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:41.011" endtime="20230615 23:45:41.691"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:39.369" endtime="20230615 23:45:41.692"/>
+</kw>
+<kw name="E informo o fornecedor e confirmo" library="resource">
+<kw name="Input Text" library="SikuliLibrary">
+<arg>txt-fornecedor.png</arg>
+<arg>3696</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230615 23:45:43.166" level="INFO">Input Text:
+3696</msg>
+<msg timestamp="20230615 23:45:43.166" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883541981.png'/&gt;
+[log] CLICK on L[480,265]@S(0) (556 msec)
+[log]  TYPE "3696"</msg>
+<status status="PASS" starttime="20230615 23:45:41.693" endtime="20230615 23:45:43.167"/>
+</kw>
+<kw name="Type" library="ImageHorizonLibrary">
+<arg>\t</arg>
+<doc>Type text and keyboard keys.</doc>
+<status status="PASS" starttime="20230615 23:45:43.168" endtime="20230615 23:45:43.270"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:44.232" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883543479.png'/&gt;
+[log] CLICK on L[463,541]@S(0) (551 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:43.270" endtime="20230615 23:45:44.232"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:41.693" endtime="20230615 23:45:44.232"/>
+</kw>
+<kw name="Quando seleciono uma conta a pagar" library="resource">
+<kw name="E seleciono uma conta" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>flag-marcar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:45.589" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883544813.png'/&gt;
+[log] CLICK on L[278,201]@S(0) (563 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:44.234" endtime="20230615 23:45:45.589"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:44.233" endtime="20230615 23:45:45.589"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:44.233" endtime="20230615 23:45:45.591"/>
+</kw>
+<kw name="E clico no botão Baixar" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-baixar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:46.670" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883545847.png'/&gt;
+[log] CLICK on L[1037,157]@S(0) (549 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:45.592" endtime="20230615 23:45:46.670"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-contasapagar-baixar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:47.357" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883547307.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:46.671" endtime="20230615 23:45:47.358"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:45.591" endtime="20230615 23:45:47.358"/>
+</kw>
+<kw name="E informo a forma de pagamento" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-icone-mais.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:48.421" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883547613.png'/&gt;
+[log] CLICK on L[1039,416]@S(0) (565 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:47.359" endtime="20230615 23:45:48.421"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>opcao-motivo-12.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:49.871" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883549078.png'/&gt;
+[log] CLICK on L[499,328]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:48.421" endtime="20230615 23:45:49.871"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:50.854" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883550095.png'/&gt;
+[log] CLICK on L[524,495]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:49.871" endtime="20230615 23:45:50.854"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-confirma-dados.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:51.487" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883551455.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:50.854" endtime="20230615 23:45:51.488"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:52.535" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883551729.png'/&gt;
+[log] CLICK on L[365,557]@S(0) (554 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:51.488" endtime="20230615 23:45:52.535"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:47.359" endtime="20230615 23:45:52.535"/>
+</kw>
+<kw name="Então a baixa é realizada com sucesso" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:53.553" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883552793.png'/&gt;
+[log] CLICK on L[297,615]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:52.537" endtime="20230615 23:45:53.553"/>
+</kw>
+<kw name="Quando navego até a aba Pagas" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>aba-pagas.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:54.601" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883553846.png'/&gt;
+[log] CLICK on L[345,113]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:53.554" endtime="20230615 23:45:54.601"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:53.553" endtime="20230615 23:45:54.602"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>registro-conta-paga.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:54.865" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883554847.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:54.602" endtime="20230615 23:45:54.865"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ESC</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:54.955" level="INFO">[log]  TYPE "#ESC."</msg>
+<status status="PASS" starttime="20230615 23:45:54.865" endtime="20230615 23:45:54.955"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:52.536" endtime="20230615 23:45:54.956"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:38.851" endtime="20230615 23:45:54.956"/>
+</test>
+<test id="s1-t3" name="Realizar a exclusão de uma baixa" line="33">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20230615 23:45:54.960" endtime="20230615 23:45:54.969"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:54.959" endtime="20230615 23:45:54.970"/>
+</kw>
+<kw name="Dado que estou no módulo Gerencial" library="resource">
+<kw name="Set Variable" library="BuiltIn">
+<var>${window_title}</var>
+<arg>AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230615 23:45:54.971" level="INFO">${window_title} = AutoSystem PRO - Sistema para Gestão e Automação de Postos de Combustível</msg>
+<status status="PASS" starttime="20230615 23:45:54.971" endtime="20230615 23:45:54.971"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>${window_title}</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20230615 23:45:54.971" endtime="20230615 23:45:55.473"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:54.970" endtime="20230615 23:45:55.473"/>
+</kw>
+<kw name="E acesso a rotina Financeiro &gt; Contas a pagar &gt; Contas a pagar" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>menu-financeiro.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:45:56.486" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883555708.png'/&gt;
+[log] CLICK on L[38,33]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:55.475" endtime="20230615 23:45:56.486"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:56.580" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:56.488" endtime="20230615 23:45:56.580"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:56.674" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:56.580" endtime="20230615 23:45:56.674"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:56.768" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:56.675" endtime="20230615 23:45:56.768"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:56.861" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:56.768" endtime="20230615 23:45:56.862"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:56.955" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230615 23:45:56.862" endtime="20230615 23:45:56.955"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>RIGHT</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:57.047" level="INFO">[log]  TYPE "#RIGHT."</msg>
+<status status="PASS" starttime="20230615 23:45:56.955" endtime="20230615 23:45:57.047"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:45:57.140" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230615 23:45:57.047" endtime="20230615 23:45:57.140"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>tela-contas-pagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:45:57.771" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883557741.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:45:57.140" endtime="20230615 23:45:57.771"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:55.474" endtime="20230615 23:45:57.772"/>
+</kw>
+<kw name="E informo o fornecedor e confirmo" library="resource">
+<kw name="Input Text" library="SikuliLibrary">
+<arg>txt-fornecedor.png</arg>
+<arg>3696</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230615 23:45:59.128" level="INFO">Input Text:
+3696</msg>
+<msg timestamp="20230615 23:45:59.128" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883558042.png'/&gt;
+[log] CLICK on L[480,265]@S(0) (553 msec)
+[log]  TYPE "3696"</msg>
+<status status="PASS" starttime="20230615 23:45:57.773" endtime="20230615 23:45:59.129"/>
+</kw>
+<kw name="Type" library="ImageHorizonLibrary">
+<arg>\t</arg>
+<doc>Type text and keyboard keys.</doc>
+<status status="PASS" starttime="20230615 23:45:59.129" endtime="20230615 23:45:59.231"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-confirmar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:00.216" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883559458.png'/&gt;
+[log] CLICK on L[463,541]@S(0) (566 msec)</msg>
+<status status="PASS" starttime="20230615 23:45:59.231" endtime="20230615 23:46:00.217"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:57.772" endtime="20230615 23:46:00.217"/>
+</kw>
+<kw name="Quando navego até a aba Pagas" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>aba-pagas.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:01.348" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883560525.png'/&gt;
+[log] CLICK on L[345,113]@S(0) (554 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:00.218" endtime="20230615 23:46:01.348"/>
+</kw>
+<status status="PASS" starttime="20230615 23:46:00.218" endtime="20230615 23:46:01.348"/>
+</kw>
+<kw name="E seleciono uma conta" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>flag-marcar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:02.431" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883561607.png'/&gt;
+[log] CLICK on L[278,201]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:01.349" endtime="20230615 23:46:02.432"/>
+</kw>
+<status status="PASS" starttime="20230615 23:46:01.349" endtime="20230615 23:46:02.432"/>
+</kw>
+<kw name="E realizo a exclusão" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-icone-excluir.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:03.518" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883562708.png'/&gt;
+[log] CLICK on L[960,201]@S(0) (548 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:02.433" endtime="20230615 23:46:03.518"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-excluir.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:05.014" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883564174.png'/&gt;
+[log] CLICK on L[287,615]@S(0) (564 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:03.519" endtime="20230615 23:46:05.014"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-sim.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:06.497" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883565656.png'/&gt;
+[log] CLICK on L[568,434]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:05.014" endtime="20230615 23:46:06.497"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>btn-sim.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:07.615" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883566773.png'/&gt;
+[log] CLICK on L[550,619]@S(0) (560 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:06.498" endtime="20230615 23:46:07.615"/>
+</kw>
+<status status="PASS" starttime="20230615 23:46:02.432" endtime="20230615 23:46:07.616"/>
+</kw>
+<kw name="Quando navego até a aba A Pagar" library="resource">
+<kw name="Click" library="SikuliLibrary">
+<arg>aba-a-pagar.png</arg>
+<doc>Click</doc>
+<msg timestamp="20230615 23:46:09.097" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883568257.png'/&gt;
+[log] CLICK on L[266,112]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20230615 23:46:07.616" endtime="20230615 23:46:09.098"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>registro-conta-a-pagar.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20230615 23:46:09.339" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686883569324.png'/&gt;</msg>
+<status status="PASS" starttime="20230615 23:46:09.098" endtime="20230615 23:46:09.339"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ESC</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230615 23:46:09.431" level="INFO">[log]  TYPE "#ESC."</msg>
+<status status="PASS" starttime="20230615 23:46:09.340" endtime="20230615 23:46:09.431"/>
+</kw>
+<status status="PASS" starttime="20230615 23:46:07.616" endtime="20230615 23:46:09.432"/>
+</kw>
+<status status="PASS" starttime="20230615 23:45:54.959" endtime="20230615 23:46:09.433"/>
+</test>
+<status status="PASS" starttime="20230615 23:45:21.707" endtime="20230615 23:46:09.435"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="VendasF5">VendasF5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
